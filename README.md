@@ -12,6 +12,8 @@
 
 My personal website with my projects, skill, blog, and about, now rewritten (for the fourth time) in Next.js, TypeScript, Tailwind, and Postgres! This rewrite has significantly improved performance, content, navigation, design, and SEO, and added multiple projects and additional content about me as well!
 
+You can check out the original old version at [old.tonymac.net](https://old.tonymac.net)
+
 ## Features
 
 - Homepage: hero with interactive intro section and Discord status widget, fun testimonials, and comment section
