@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
 };
 
+//TODO: make static folder html pages work directly on nextjs
+
 function Page() {
   return (
     <div className="mb-15">

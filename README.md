@@ -1,4 +1,4 @@
-# [TonyMac129](https://tonymac129.vercel.app)
+# [TonyMac129](https://tonymac.net)
 
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
@@ -34,9 +34,9 @@ This is a [Next.js](https://nextjs.org) app hosted on [Vercel](https://vercel.co
 
 To host my portfolio on your machine (why?) for local development or other purposes, simply follow these steps below:
 
-1. Clone the GitHub [repository](https://github.com/tonymac129/tonymac129-next) using the command
+1. Clone the GitHub [repository](https://github.com/tonymac129/site) using the command
    ```bash
-   git clone https://github.com/tonymac129/tonymac129-next.git
+   git clone https://github.com/tonymac129/site.git
    ```
 2. Open it with your favorite code editor or through the terminal
 3. If you don't have a local Postgres database or a cloud Neon/Supabase cluster/connection string, only the non-admin pages will be available because of obvious reasons
