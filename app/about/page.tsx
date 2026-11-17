@@ -10,10 +10,11 @@ const statuses: StatusType[] = [
   {
     id: 0,
     heading: "Currently Developing:",
-    name: "AniHub",
+    name: "Iridium",
     description:
-      "Track the anime series & movies you've watched and discuss them with other people",
-    link: "https://anihub-app.vercel.app",
+      "Self-hosted school management platform for students, staff, classes, clubs, grades, and more.",
+    link: "https://iridium.tonymac.net",
+    image: "https://iridium.tonymac.net/logo.png",
   },
   {
     id: 1,
@@ -27,38 +28,20 @@ const statuses: StatusType[] = [
   {
     id: 2,
     heading: "Currently Watching:",
-    name: "My Hero Academia",
-    description: "Finale so tuff 🥹✌️",
-    link: "https://www.imdb.com/title/tt5626028/?ref_=fn_t_1",
+    name: "Gintama",
+    description: "350 episodes of peak comedy! (I'm never finishing this 😭)",
+    link: "https://www.imdb.com/title/tt0988818",
     image:
-      "https://m.media-amazon.com/images/M/MV5BY2QzODA5OTQtYWJlNi00ZjIzLThhNTItMDMwODhlYzYzMjA2XkEyXkFqcGc@._V1_.jpg",
-  },
-  {
-    id: 3,
-    heading: "Currently Watching:",
-    name: "The Fragrant Flower Blooms with Dignity",
-    description: "Such a wholesome romance anime",
-    link: "https://www.imdb.com/title/tt36592690/",
-    image:
-      "https://preview.redd.it/kaoru-hana-wa-rin-to-saku-the-fragrant-flower-blooms-with-v0-qbqxt9ht285f1.jpeg?width=640&crop=smart&auto=webp&s=22777a86de3d6fed23daca7ae3623b48f776e6e9",
-  },
-  {
-    id: 4,
-    heading: "Currently Watching:",
-    name: "Breaking Bad",
-    description: "#1 top rated tv show of all time",
-    link: "https://www.imdb.com/title/tt0903747/",
-    image:
-      "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BNTMzNjE0N2ItNjFiYi00NmIzLTk1MzMtZWFjNThjMzI5MTJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   },
   {
     id: 5,
     heading: "Currently Reading:",
-    name: "Harry Potter and the Prisoner of Azkaban",
+    name: "Harry Potter and the Order of the Phoenix",
     description: "First time reading the series",
-    link: "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Prisoner_of_Azkaban",
+    link: "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix",
     image:
-      "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
+      "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1627045351i/58613451.jpg",
   },
 ];
 
@@ -100,7 +83,7 @@ function Page() {
             <Status key={status.id} status={status} />
           ))}
           <div className="text-zinc-800 dark:text-zinc-300 text-sm">
-            Status last updated 4/8/26
+            Status last updated 11/16/26
           </div>
         </div>
         <div className="flex flex-col gap-y-10 flex-2">

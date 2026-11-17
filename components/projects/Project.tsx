@@ -47,7 +47,8 @@ function Project({ project }: { project: ProjectType }) {
         ))}
       </div>
       <p className="text-zinc-800 dark:text-zinc-300">
-        {project.description?.slice(0, 300) + "..."}
+        {project.description?.slice(0, 300) +
+          (project.description!.length > 300 ? "..." : "")}
       </p>
     </div>
   );

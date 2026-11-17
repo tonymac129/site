@@ -8,6 +8,8 @@ import {
   SiPrisma,
   SiGithub,
   SiDocker,
+  SiFramework,
+  SiVscodium,
 } from "react-icons/si";
 import {
   FaReact,
@@ -20,11 +22,12 @@ import {
   FaGitAlt,
   FaBasketballBall,
   FaSteam,
+  FaRust,
+  FaFlag,
 } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GrArchlinux } from "react-icons/gr";
 import { PiMathOperations, PiAtomBold } from "react-icons/pi";
-import { VscVscode } from "react-icons/vsc";
 
 interface AttributeInterface {
   name: string;
@@ -105,6 +108,23 @@ export const roles: RoleInterface[] = [
         color: "group-hover:text-rose-600",
         link: "raspberrypi.com",
       },
+      {
+        name: "Framework",
+        icon: <SiFramework size={35} />,
+        color: "group-hover:text-[#E76235]",
+        link: "frame.work",
+      },
+      {
+        name: "Arch btw",
+        icon: <GrArchlinux size={35} />,
+        color: "group-hover:text-blue-500",
+        link: "archlinux.org",
+      },
+      {
+        name: "Sysadmin",
+        icon: <FaServer size={35} />,
+        link: "sysadmins.tjhsst.edu",
+      },
     ],
   },
   {
@@ -118,16 +138,22 @@ export const roles: RoleInterface[] = [
         link: "python.org",
       },
       {
+        name: "Rust",
+        icon: <FaRust size={35} />,
+        color: "group-hover:text-[#D34516]",
+        link: "rust-lang.org",
+      },
+      {
         name: "Java",
         icon: <FaJava size={35} />,
         color: "group-hover:text-red-500",
         link: "java.com",
       },
       {
-        name: "VS Code",
-        icon: <VscVscode size={35} />,
+        name: "VS Codium",
+        icon: <SiVscodium size={35} />,
         color: "group-hover:text-blue-500",
-        link: "code.visualstudio.com",
+        link: "vscodium.com",
       },
       {
         name: "Git",
@@ -140,23 +166,13 @@ export const roles: RoleInterface[] = [
         icon: <SiGithub size={35} />,
         link: "github.com",
       },
-      {
-        name: "Arch btw",
-        icon: <GrArchlinux size={35} />,
-        color: "group-hover:text-blue-500",
-        link: "archlinux.org",
-      },
-      // {
-      //   name: "Sysadmin understudy",
-      //   icon: <FaServer size={35} />,
-      //   link: "sysadmins.tjhsst.edu/understudy/",
-      // },
     ],
   },
   {
     id: 3,
     name: "Student",
     attributes: [
+      { name: "Club leader", icon: <FaFlag size={35} />, link: "tjdev.club" },
       {
         name: "TJHSST",
         icon: "/icons/tjhsst.svg",
@@ -174,11 +190,6 @@ export const roles: RoleInterface[] = [
       ) + " y/o",
     attributes: [
       {
-        name: "Basketball",
-        icon: <FaBasketballBall size={35} />,
-        color: "group-hover:text-orange-400",
-      },
-      {
         name: "Anime fan",
         icon: <SiCrunchyroll size={35} />,
         color: "group-hover:text-orange-500",
@@ -189,6 +200,11 @@ export const roles: RoleInterface[] = [
         icon: <FaSteam size={35} />,
         color: "group-hover:text-sky-800",
         link: "store.steampowered.com",
+      },
+      {
+        name: "Basketball",
+        icon: <FaBasketballBall size={35} />,
+        color: "group-hover:text-orange-400",
       },
       {
         name: "Discord",

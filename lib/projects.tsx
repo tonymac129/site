@@ -5,6 +5,9 @@ import {
   FaJsSquare,
   FaReact,
   FaJava,
+  FaPython,
+  FaRust,
+  FaLinux,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -15,12 +18,43 @@ import {
   SiNodedotjs,
   SiUnity,
   SiAstro,
+  SiPostgresql,
+  SiDocker,
+  SiFastapi,
+  SiPrisma,
+  SiSocketdotio,
+  SiDjango,
+  SiGodotengine,
 } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
+
+//TODO: add a field for time spent on project, perhaps pulled from hackatime?
 
 export const projectData: ProjectType[] = [
   {
     id: 0,
+    name: "Iridium",
+    description:
+      "Iridium is an easy to use, 100% open-source, self-hosted platform for schools to post announcements, view schedules, manage classes and clubs, browse students and staff, record attendance and grades, and pretty much anything related to school administration in general, inspired by TJHSST's intranet Ion. I spent 100 hours along with two of my friends working on this project for Hack Club Third Space!",
+    image:
+      "https://user-cdn.hackclub-assets.com/01a1bea0-78b0-79ca-93b9-8425b7df0f62/Screenshot%202026-11-08%20at%2023-42-18%20Home%20Iridium.png",
+    link: "iridium.tonymac.net",
+    repo: "iron-hands-team/iridium",
+    date: "Sep 2026 - Now",
+    skills: [
+      <SiNextdotjs key={0} />,
+      <FaReact key={1} />,
+      <SiTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiFastapi key={4} />,
+      <FaPython key={5} />,
+      <SiDocker key={6} />,
+      <SiPostgresql key={7} />,
+    ],
+    tags: ["Web App", "Fullstack"],
+  },
+  {
+    id: 3,
     name: "MacWeb",
     description:
       "MacWeb is an online platform I created to make digital life a bit easier and more enjoyable. It features MacVG, an online gaming hub focused on entertainment, and MacLearn, a platform used for learning web development. MacWeb also has other smaller apps like MacIdeas and MacTools for productivity and utilities, as well as the information hub MacBlog for updates, news, and info about MacWeb. I've been working on MacWeb's first app, the web dev learning platform MacLearn, since January 2023, and MacVG, the online gaming platform, since June 2023. I officially created and rebranded MacWeb as a collection of web apps and tools in October 2023 and its popularity has skyrocketed ever since. I started earning hundreds monthly from MacWeb in December 2024 thanks to ads, and I transitioned the entire platform to React in July 2025 (I basically remade the entire website and it wasn't easy). This is the project that I've spent the most time working on, so hopefully you'll enjoy what I created.",
@@ -39,6 +73,48 @@ export const projectData: ProjectType[] = [
   },
   {
     id: 1,
+    name: "MemeBoard",
+    description:
+      "MemeBoard is basically a Reddit clone with all the basic features you would expect from such a social media app, except it's built specifically for people to share memes with each other! You can create your own posts, browse different memes and categories, and share posts and chat with your friends on this project built for Hack Club Stardance that received a ton of positive community feedback!",
+    image:
+      "https://github.com/tonymac129/memeboard/blob/main/public/banner.png?raw=true",
+    link: "memeboard-app.vercel.app",
+    repo: "tonymac129/memeboard",
+    date: "Jun 2026 - Sep 2026",
+    skills: [
+      <SiNextdotjs key={0} />,
+      <FaReact key={1} />,
+      <SiTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiPrisma key={4} />,
+      <SiPostgresql key={5} />,
+    ],
+    tags: ["Web App", "Fullstack"],
+  },
+  {
+    id: 2,
+    name: "Codeliver",
+    description:
+      "I actually shifted all my focus and started building Codeliver before I was even close to finishing MemeBoard, because I just couldn't wait to make a complete realtime fullstack chat app made for developers to chat and share code after having so much fun implementing a lightweight messaging system for MemeBoard :) This project was also built for Hack Club Stardance!",
+    image:
+      "https://github.com/tonymac129/codeliver/blob/main/banner.png?raw=true",
+    link: "codeliver.tonymac.net",
+    repo: "tonymac129/codeliver",
+    date: "Jun 2026 - Nov 2026",
+    skills: [
+      <SiNextdotjs key={0} />,
+      <FaReact key={1} />,
+      <SiTypescript key={2} />,
+      <SiTailwindcss key={3} />,
+      <SiExpress key={4} />,
+      <SiSocketdotio key={5} />,
+      <SiPrisma key={4} />,
+      <SiPostgresql key={5} />,
+    ],
+    tags: ["Web App", "SPA"],
+  },
+  {
+    id: 4,
     name: "Subtrack",
     description:
       "Initially I was just tired of having so many subscriptions and services that it was hard to remember all of them and stay on budget. I planned to make a quick React front-end only app for my personal use, but kept delaying it. During this period, I learned the framework Next.js as well as other modern technologies. This made me rethink the entire project, and this was the result: a completely full-stack web app that keeps track of all your subscriptions with 50+ different services and presets, renewal date reminders, subscription management features, account management features with AES-256 password encryption, spending/account analytics dashboard with Chart.js, guest mode, and an OAuth/credential account system that hashes user data and stores it in the backend database securely. This is my first actual complete full-stack app that I put a ton of effort into, totaling over 35 hours of development time.",
@@ -57,7 +133,7 @@ export const projectData: ProjectType[] = [
     tags: ["Web App", "Fullstack"],
   },
   {
-    id: 2,
+    id: 5,
     name: "Lightning",
     description:
       "Since I first created MacWeb, I imagined an entire ecosystem of a bunch of different apps that could all integrate together (lol how naive I thought I could create all that myself) and every app can be called to do a certain task with a universal command bar. I soon realized there's no way to achieve this level of scale and the idea just became a dream. Until I got good with React and wanted to replace my old personal dashboard made with vanilla JS for the third time. I thought, why not make an extremely customizable dashboard with a ton of features and commands that act as shrotcuts to the web? Shortly after starting it, I discovered the event Summer of Making hosted by the absolutely amazing organization Hack Club that rewards teens with free prizes/tech/merch for coding and making cool stuff. This gave me a ton of motivation and I developed a lot of features and stacked 9 hours on the project in just a week. Lightning is still being developed and I hope to make more features in the future!",
@@ -1053,6 +1129,36 @@ export const miscData: ProjectType[] = [
     tags: ["Web App"],
   },
   {
+    id: 600,
+    name: "Yosemite Park",
+    description:
+      "Very basic SPA web dev animation project built for a Sysadmin Understudy assignment",
+    link: "https://yosemite-park.vercel.app",
+    date: "Mar 2026",
+    skills: [
+      <FaReact key={0} />,
+      <SiTypescript key={1} />,
+      <SiTailwindcss key={2} />,
+    ],
+    tags: ["Web App", "Animation"],
+  },
+  {
+    id: 630,
+    name: "Djenga",
+    description:
+      "A simple fullstack Dockerized blogging platform built in Django for a Sysadmin Understudy assignment.",
+    link: "https://djenga.sites.tjhsst.edu/",
+    date: "Mar 2026",
+    skills: [
+      <SiDjango key={0} />,
+      <FaPython key={1} />,
+      <SiTailwindcss key={2} />,
+      <SiDocker key={3} />,
+      <SiPostgresql key={4} />,
+    ],
+    tags: ["Learning", "Web App"],
+  },
+  {
     id: 590,
     name: "LinguaLift",
     description:
@@ -1067,5 +1173,57 @@ export const miscData: ProjectType[] = [
       <SiMongodb key={4} />,
     ],
     tags: ["Web App"],
+  },
+  {
+    id: 610,
+    name: "Anihub",
+    description:
+      "A simple MyAnimeList tracking/rating alternative whose free API key unfortunately no longer works...",
+    link: "https://github.com/tonymac129/anihub",
+    date: "Apr 2026",
+    skills: [
+      <FaReact key={0} />,
+      <SiNextdotjs key={1} />,
+      <SiTypescript key={2} />,
+      <SiPrisma key={3} />,
+      <SiPostgresql key={4} />,
+    ],
+    tags: ["Learning", "Rust"],
+  },
+  {
+    id: 620,
+    name: "Slowfetch",
+    description:
+      "My first Rust project that's a simple (and slow) command line Neofetch/Fastfetch clone!",
+    link: "https://github.com/tonymac129/slowfetch",
+    date: "Jun 2026",
+    skills: [<FaRust key={0} />, <FaLinux key={1} />],
+    tags: ["Learning", "Rust"],
+  },
+  {
+    id: 640,
+    name: "8-Bit Jam Site",
+    description:
+      "Landing page, submission platform, and judging portal website for a game jam I organized, 8-Bit Jam!",
+    link: "https://8bitjam.win",
+    date: "Aug 2026",
+    skills: [
+      <FaReact key={0} />,
+      <SiNextdotjs key={1} />,
+      <SiTypescript key={2} />,
+      <SiPrisma key={3} />,
+      <SiPostgresql key={4} />,
+    ],
+    tags: ["Web App"],
+  },
+  {
+    id: 650,
+    name: "Mr. Rock",
+    description:
+      "My first very simple and barely functional 2D game made in Godot with a few friends for Haven DC!",
+    link: "https://blues-hue.itch.io/mr-rock-2",
+    date: "Nov 2026",
+    skills: [<SiGodotengine key={0} />],
+    tags: ["Learning", "Game"],
   },
 ];

@@ -5,9 +5,8 @@ import {
   FaTiktok,
   FaYoutube,
   FaInstagram,
-  FaFacebook,
+  FaLinkedin,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { SiGithub } from "react-icons/si";
 
 function Footer() {
@@ -30,14 +29,14 @@ function Footer() {
         <a href="mailto:yo@tonymac.net">
           <MdEmail size={25} className="cursor-pointer" />
         </a>
-        <a href="https://discord.com/users/1068681362590146611" target="_blank">
-          <FaDiscord size={25} className="cursor-pointer" />
-        </a>
         <a href="https://github.com/tonymac129" target="_blank">
           <SiGithub size={25} className="cursor-pointer" />
         </a>
-        <a href="https://reddit.com/u/tonymac129" target="_blank">
-          <FaReddit size={25} className="cursor-pointer" />
+        <a href="https://www.linkedin.com/in/tonymac129/" target="_blank">
+          <FaLinkedin size={25} className="cursor-pointer" />
+        </a>
+        <a href="https://discord.com/users/1068681362590146611" target="_blank">
+          <FaDiscord size={25} className="cursor-pointer" />
         </a>
         <a href="https://tiktok.com/@tonymac129" target="_blank">
           <FaTiktok size={25} className="cursor-pointer" />
@@ -45,17 +44,11 @@ function Footer() {
         <a href="https://youtube.com/@tonymac129" target="_blank">
           <FaYoutube size={25} className="cursor-pointer" />
         </a>
+        <a href="https://reddit.com/u/tonymac129" target="_blank">
+          <FaReddit size={25} className="cursor-pointer" />
+        </a>
         <a href="https://www.instagram.com/tonymac129" target="_blank">
           <FaInstagram size={25} className="cursor-pointer" />
-        </a>
-        <a href="https://x.com/tonymac129" target="_blank">
-          <FaXTwitter size={25} className="cursor-pointer" />
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100090236006126"
-          target="_blank"
-        >
-          <FaFacebook size={25} className="cursor-pointer" />
         </a>
       </div>
     </div>
